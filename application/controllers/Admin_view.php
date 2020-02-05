@@ -17,4 +17,11 @@ class Admin_view extends CI_Controller {
 		$this->load->view('admin/home_admin',$data);
 		$this->load->view('admin/master/footer_admin',$data);
 	}
+
+	public function login(){
+		$data['judul'] = 'Admin || Login'; 
+		$this->load->view('admin/master/header_admin',$data);
+		$this->load->view('login');
+		$this->load->view('admin/master/footer_admin',$data);
+	}
 }
